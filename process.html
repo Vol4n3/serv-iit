@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IIT Program Global Medical Affairs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="process">
+
+    <header>
+        <div class="iit-container">
+            <nav class="box y-center">
+                <div>
+                    <img src="images/LOGO_IIT.png" alt="logo IIT" />
+                </div>
+                <ul class="box y-center wrap right">
+                    <!--Active current url-->
+                    <li class="url">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="url">
+                        <a href="lonsurf.html">Lonsurf</a>
+                    </li>
+                    <li class="url">
+                        <a href="pixuvri.html">Pixuvri</a>
+                    </li>
+                    <li class="url active">
+                        <a href="process.html">Process/guidlines</a>
+                    </li>
+                    <li class="picto_url">
+                        <a href="Administration-User.html">
+                        <button type="button" class="btn-admin"></button>
+                    </a>
+                    </li>
+                    <li class="picto_url">
+                        <a href="#">
+                        <button type="button" class="btn-mail"></button>
+                    </a>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="user_profil" src="images/user_profil.jpg" alt="user profil" />
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="page-title">
+            <div class="iit-container">
+                <div>
+                    <div class="logo">
+                        <button type="button" class="rounded bg-secondary shadow btn-close"></button>
+                    </div>
+                    <h1 class="light">Add new process/guideline</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="iit-container">
+        <section class="box wrap center bg-blurwhite">
+            <datalist id="category">
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+                <option value="category2">Category 3</option>
+                <option value="category2">Category 4</option>
+            </datalist>
+            <form id="form" action="/action_page.php" method="post">
+                <div class="box center wrap">
+                    <section class="block_left">
+                        <div class="bg-light">
+                            <fieldset>
+                                <legend>Document info</legend>
+                                <div>
+                                    <label for="title" class="required">Title</label>
+                                    <input type="text" name="title" id="title" placeholder="Document title" required>
+                                </div>
+                                <div>
+                                    <label for="study_short_title">Study short title</label>
+                                    <input type="text" name="study_short_title" id="study_short_title" placeholder="Study short title">
+                                </div>
+                            </fieldset>
+                        </div>
+                    </section>
+
+                    <section class="block_right">
+                        <div class="bg-light">
+                            <fieldset>
+                                <legend>Active file / Draft</legend>
+                                <label>Current Valid Version </label>
+                                <a href="#">
+                                    <p class="primary">Filename</p>
+                                    <div class="box y-center">
+
+                                        <div>
+                                            <img src="images/logos/pdf-active.svg" width="50" height="50">
+                                        </div>
+                                        <div>
+                                            <button class="bg-primary btn btn-lg">Télécharger</button>
+                                        </div>
+                                    </div>
+
+                                </a>
+                                <label>Draft document </label>
+                                <input type="file" name="Browse or drag and drop">
+                                <div class="dropzone box center y-center "> <p>drop here</p></div>
+                            </fieldset>
+                        </div>
+                        <div class="submit box right ">
+                            <input class="bg-secondary" type="submit" value="Save">
+                            <input class="bg-submit" type="submit" value="Next">
+                        </div>
+                    </section>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="iit-container">
+            <div class="box between">
+                <div class="disclaimer">
+                    <h4>Disclaimer</h4>
+                    <p>
+                        All documents that are downloaded on iit must be submitted for local regulatory approval before any use with external stakeholders
+                    </p>
+                </div>
+                <div class="contact">
+                    <h4>Contact</h4>
+                    <p>
+                        Please feel free to contact us with any questions or <a href="http://remarks.contact@iit.com">remarks.contact@iit.com</a>
+                    </p>
+                </div>
+                <div class="logos box">
+                    <div>
+                        <img src="images/logo_iit_footer.png" alt="logo iit" />
+                    </div>
+                    <div>
+                        <img src="images/2000px-Servier_logo.png" alt="logo Servier" />
+                    </div>
+                </div>
+                <div>
+                    <p>Copyright © 2016
+                        <br> All Rights Reserved by Servier</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

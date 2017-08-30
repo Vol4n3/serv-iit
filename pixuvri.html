@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IIT Program Global Medical Affairs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body class="pixuvri_study">
+
+<header>
+    <div class="iit-container">
+        <nav class="box y-center">
+            <div>
+                <img src="images/LOGO_IIT.png" alt="logo IIT"/>
+            </div>
+            <ul class="box y-center wrap right">
+                <!--Active current url-->
+                <li class="url">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="url">
+                    <a href="lonsurf.html">Lonsurf</a>
+                </li>
+                <li class="url active">
+                    <a href="pixuvri.html">Pixuvri</a>
+                </li>
+                <li class="url">
+                    <a href="process.html">Process/guidlines</a>
+                </li>
+                <li class="picto_url">
+                    <a href="Administration-User.html">
+                        <button type="button" class="btn-admin"></button>
+                    </a>
+                </li>
+                <li class="picto_url">
+                    <a href="">
+                        <button type="button" class="btn-mail"></button>
+                    </a>
+                </li>
+                <li>
+                    <div>
+                        <img class="user_profil" src="images/user_profil.jpg" alt="user profil"/>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="page-title">
+        <div class="iit-container">
+            <div>
+                <div class="logo">
+                    <button type="button" class="rounded bg-secondary shadow btn-close"></button>
+                </div>
+                <h1 class="light">Add new pixuvri study</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="iit-container">
+    <section class="bg-blurwhite">
+    <nav class="subnav box center steps">
+        <div>
+            <button type="button" class="rounded btn-left "></button>
+        </div>
+        <div>
+            <button type="button" class="rounded active"></button>
+            <p>Basic information
+                <br>Drugs</p>
+        </div>
+        <div>
+            <button type="button" class="rounded"></button>
+            <p>Synopsis/Protocol
+                <br>Concept
+            </p>
+        </div>
+        <div>
+            <button type="button" class="rounded"></button>
+            <p>Finalization
+                <br>Updates
+            </p>
+        </div>
+        <div>
+            <button type="button" class="rounded btn-right active"></button>
+        </div>
+
+    </nav>
+
+        <datalist id="countries">
+            <option value="France">France</option>
+            <option value="England">England</option>
+            <option value="Spain">Spain</option>
+            <option value="Portugal">Portugal</option>
+        </datalist>
+        <datalist id="drugs">
+            <option value="Drug1">Drug 1</option>
+            <option value="Drug2">Drug 2</option>
+            <option value="Drug3">Drug 3</option>
+            <option value="Drug4">Drug 4</option>
+        </datalist>
+        <datalist id="diseases">
+            <option value="disease1">Disease 1</option>
+            <option value="disease2">Disease 2</option>
+            <option value="disease3">Disease 3</option>
+            <option value="disease4">Disease 4</option>
+        </datalist>
+        <datalist id="endpoints">
+            <option value="endpoint1">Endpoint 1</option>
+            <option value="endpoint2">Endpoint 2</option>
+            <option value="endpoint3">Endpoint 3</option>
+            <option value="endpoint4">Endpoint 4</option>
+        </datalist>
+        <datalist id="phases">
+            <option value="phase1">phase 1</option>
+            <option value="phase2">phase 2</option>
+            <option value="phase3">phase 3</option>
+            <option value="phase4">phase 4</option>
+        </datalist>
+        <form id="form" action="/action_page.php" method="post">
+            <div class="box center wrap">
+                <section class="block_left">
+                    <div class="bg-light">
+                        <fieldset>
+                            <legend>Basic information</legend>
+                            <div>
+                                <label for="study_title" class="required"> Study title </label>
+                                <input type="text" name="study_title" id="study_title"
+                                       placeholder="Study title and brief description" required>
+                            </div>
+                            <div>
+                                <label for="study_short_title">Study short title</label>
+                                <input type="text" name="study_short_title" id="study_short_title"
+                                       placeholder="Study short title">
+                            </div>
+                            <div>
+
+                                <label for="country_study" class="required">Country </label>
+                                <input type="text" list="countries" id="country_study" name="country_study"
+                                       placeholder="Country where the study is held" required>
+                            </div>
+                            <div>
+
+                                <label for="local_contact" class="required"> Local contact </label>
+                                <input type="text" name="local_contact" id="local_contact"
+                                       placeholder="Name(s) of the local contact(s)" required>
+                            </div>
+                            <div>
+
+                                <label for="participant_countries">Participant countries</label>
+                                <input type="text" list="countries" name="participant_countries"
+                                       id="participant_countries"
+                                       placeholder="List of countries involved in the clinical trial">
+                            </div>
+
+                            <div>
+                                <label for="sponsor" class="required"> Sponsor </label>
+                                <input type="text" name="sponsor" id="sponsor"
+                                       placeholder="Sponsor of the clinical trial"
+                                       required>
+                            </div>
+                            <div>
+
+                                <label for="pi" class="required"> PI </label>
+                                <input type="text" name="pi" id="pi" placeholder="Principal investigator(s)" required>
+                            </div>
+                            <div>
+                                <label for="study_code">Study code</label>
+                                <input type="text" name="study_code" id="study_code" placeholder="PAPS study code">
+
+                            </div>
+                        </fieldset>
+                    </div>
+                </section>
+
+                <section class="block_right">
+                    <div class="bg-light">
+                        <fieldset>
+                            <legend>Drugs</legend>
+                            <div>
+                                <label for="study_drugs" class="required"> Study drugs </label>
+                                <input type="text" list="drugs" name="study_drugs" id="study_drugs"
+                                       placeholder="List of products covered by the study" required>
+                                <button type="button" class="btn-close">drug 1</button>
+                                <button type="button" class="btn-close">drug 2</button>
+                            </div>
+
+                            <div class="comparaison">
+                                <label class="box y-center">
+                                    <input type="checkbox" id="comparaison" name="choix1">
+                                    <label for="comparaison"></label>
+                                    Comparaison
+                                </label>
+                            </div>
+                            <div>
+                                <label for="disease" class="required"> Disease </label>
+                                <input type="text" name="disease" id="disease" list="diseases"
+                                       placeholder="Disease description (Multiple choices)" required>
+
+                                <button type="button" class="btn-close">disease 1</button>
+                                <button type="button" class="btn-close">disease 2</button>
+                            </div>
+                            <br>
+                            <label>Endpoints</label>
+                            <div class="tabulation">
+                                <div>
+                                    <label for="primary_endpoint" class="required"> Primary endpoint </label>
+                                    <input type="text" name="primary_endpoint" list="endpoints" id="primary_endpoint"
+                                           placeholder="Measurements depending on the study objective" required>
+
+                                </div>
+                                <div>
+                                    <label for="Secondary_endpoint">Secondary endpoint</label>
+                                    <input type="text" name="Secondary_endpoint" list="endpoints"
+                                           id="Secondary_endpoint">
+
+                                </div>
+                            </div>
+                            <div>
+                                <label for="treatment_line">Treatment line</label>
+                                <input type="text" name="treatment_line" id="treatment_line"
+                                       placeholder="Treatment line(s) targeted">
+
+                            </div>
+                            <div>
+                                <label for="phase"> Phase </label>
+                                <input type="text" name="phase" list="phases" id="phase"
+                                       placeholder="Clinical trial phase">
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="submit box right ">
+                        <input class="bg-secondary" type="submit" value="Save">
+                        <input class="bg-primary" type="submit" value="Next">
+                    </div>
+                </section>
+            </div>
+        </form>
+    </section>
+</main>
+<footer>
+    <div class="iit-container">
+        <div class="box between">
+            <div class="disclaimer">
+                <h4>Disclaimer</h4>
+                <p>
+                    All documents that are downloaded on iit must be submitted for local regulatory approval before any
+                    use with external stakeholders
+                </p>
+            </div>
+            <div class="contact">
+                <h4>Contact</h4>
+                <p>
+                    Please feel free to contact us with any questions or <a href="http://remarks.contact@iit.com">remarks.contact@iit.com</a>
+                </p>
+            </div>
+            <div class="logos box">
+                <div>
+                    <img src="images/logo_iit_footer.png" alt="logo iit"/>
+                </div>
+                <div>
+                    <img src="images/2000px-Servier_logo.png" alt="logo Servier"/>
+                </div>
+            </div>
+            <div>
+                <p>Copyright © 2016
+                    <br> All Rights Reserved by Servier</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

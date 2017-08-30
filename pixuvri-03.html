@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IIT Program Global Medical Affairs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body class="pixuvri_study">
+
+<header>
+    <div class="iit-container">
+        <nav class="box y-center">
+            <div>
+                <img src="images/LOGO_IIT.png" alt="logo IIT"/>
+            </div>
+            <ul class="box y-center wrap right">
+                <!--Active current url-->
+                <li class="url">
+                    <a href="/">Home</a>
+                </li>
+                <li class="url">
+                    <a href="lonsurf.html">Lonsurf</a>
+                </li>
+                <li class="url active">
+                    <a href="pixuvri.html">Pixuvri</a>
+                </li>
+                <li class="url">
+                    <a href="process.html">Process/guidlines</a>
+                </li>
+                <li class="picto_url">
+                    <a href="Administration-User.html">
+                        <button type="button" class="btn-admin"></button>
+                    </a>
+                </li>
+                <li class="picto_url">
+                    <a href="">
+                        <button type="button" class="btn-mail"></button>
+                    </a>
+                </li>
+                <li>
+                    <div>
+                        <img class="user_profil" src="images/user_profil.jpg" alt="user profil"/>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="page-title">
+        <div class="iit-container">
+            <div>
+                <div class="logo">
+                    <button type="button" class="rounded bg-secondary shadow btn-close"></button>
+                </div>
+                <h1 class="light">Add new pixuvri study</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="iit-container">
+    <section class="bg-blurwhite">
+        <nav class="subnav box center steps">
+            <div>
+                <button type="button" class="rounded btn-left active"></button>
+            </div>
+            <div>
+                <button type="button" class="rounded"></button>
+                <p>Basic information
+                    <br>Drugs</p>
+            </div>
+            <div>
+                <button type="button" class="rounded"></button>
+                <p>Synopsis/Protocol
+                    <br>Concept
+                </p>
+            </div>
+            <div>
+                <button type="button" class="rounded active"></button>
+                <p>Finalization
+                    <br>Updates
+                </p>
+            </div>
+            <div>
+                <button type="button" class="rounded btn-right"></button>
+            </div>
+
+        </nav>
+
+        <datalist id="targets_publication">
+            <option value="publication1">Publication 1</option>
+            <option value="publication2">Publication 2</option>
+            <option value="publication3">Publication 3</option>
+            <option value="publication4">Publication 4</option>
+        </datalist>
+
+
+        <form id="form" action="/action_page.php" method="post">
+            <div class="box center wrap">
+                <section class="block_left">
+                    <div class="bg-light">
+                        <fieldset>
+                            <legend>Finalization</legend>
+                            <table class="table-responsive">
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>
+                                        <p>Planned *</p>
+                                    </th>
+                                    <th>Actual</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>FPI</td>
+                                    <td><input type="date" name="planned_FPI"></td>
+                                    <td><input type="date" name="actual_FPI"></td>
+                                </tr>
+                                <tr>
+                                    <td>LPI</td>
+                                    <td><input type="date" name="planned_LPI"></td>
+                                    <td><input type="date" name="actual_LPI"></td>
+                                </tr>
+                                <tr>
+                                    <td>Enrollment</td>
+                                    <td><label for="enrollment" </label>
+                                        <input type="text" name="enrollment" id="enrollment"
+                                               placeholder="Total patients enrolled">
+                                    </td>
+                                    <td><label for="enrollment" </label>
+                                        <input type="text" name="enrollment" id="enrollment"
+                                               placeholder="Total patients enrolled">
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+                            <label>Study end (LVLP)</label>
+                            <input type="date" name="study_end_lvlp">
+
+                            <div>
+                                <label for="publication_timelines">Publication timelines</label>
+                                <input type="text" name="publication_timelines" id="publication_timelines"
+                                       placeholder="Publication date or period">
+                            </div>
+
+                            <div>
+                                <label for="target_publication">Target publication</label>
+                                <input type="text" name="target_publication" id="target_publication"
+                                       placeholder="Target publication(s) names(s)">
+                            </div>
+
+                            <label>Actual publication</label>
+                            <div class="tabulation">
+                                <div>
+                                    <label for="1st_publication">1st publication</label>
+                                    <div class="box">
+                                        <input type="text" style="width:70%;" name="1st_publication_name"
+                                               id="1st_publication" placeholder="Name">
+                                        <input type="date" style="width:30%;" name="1st_publication_date">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="2nd_publication"> 2nd publication </label>
+                                    <div class="box">
+                                        <input type="text" style="width:70%;" name="2nd_publication_name"
+                                               id="2nd_publication" placeholder="Name">
+                                        <input type="date" style="width:30%;" name="2nd_publication_date">
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="3rd_publication"> 3rd publication </label>
+                                    <div class="box">
+                                        <input type="text" style="width:70%;" name="3rd_publication_name"
+                                               id="3rd_publication" placeholder="Name">
+                                        <input type="date" style="width:30%;" name="3rd_publication_date">
+                                    </div>
+                                </div>
+                            </div>
+                            <label>Study report</label>
+                            <div class="released">
+                                <label class="box y-center">
+                                    <input type="checkbox" id="released" name="choix1">
+                                    <label for="released"></label> Released
+                                </label>
+                                <input type="date" name="date">
+                            </div>
+                        </fieldset>
+                    </div>
+                </section>
+
+                <section class="block_right">
+                    <div class="bg-light">
+                        <fieldset>
+                            <legend>Updates</legend>
+                            <div>
+                                <label for="Comments">Comments</label>
+                                <input type="text" name="Comments" id="Comments" placeholder="Free comments">
+
+                            </div>
+
+                            <label>Last update *</label>
+                            <input type="date" name="date">
+
+                        </fieldset>
+                    </div>
+                <div class="submit box right ">
+                    <input class="bg-secondary" type="submit" value="Save">
+                </div>
+                </section>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="iit-container">
+        <div class="box between">
+            <div class="disclaimer">
+                <h4>Disclaimer</h4>
+                <p>
+                    All documents that are downloaded on iit must be submitted for local regulatory approval before any
+                    use with external stakeholders
+                </p>
+            </div>
+            <div class="contact">
+                <h4>Contact</h4>
+                <p>
+                    Please feel free to contact us with any questions or <a href="http://remarks.contact@iit.com">remarks.contact@iit.com</a>
+                </p>
+            </div>
+            <div class="logos box">
+                <div>
+                    <img src="images/logo_iit_footer.png" alt="logo iit"/>
+                </div>
+                <div>
+                    <img src="images/2000px-Servier_logo.png" alt="logo Servier"/>
+                </div>
+            </div>
+            <div>
+                <p>Copyright © 2016
+                    <br> All Rights Reserved by Servier</p>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+</body>
+
+</html>

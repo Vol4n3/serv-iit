@@ -1,0 +1,12 @@
+<svg fill="#feb70d" xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:cc="http://creativecommons.org/ns#" 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:svg="http://www.w3.org/2000/svg" 
+  xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" 
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" 
+   version="1.1" x="0px" y="0px" viewBox="0 0 100% 100%">
+   <g transform="translate(0,-952.36218)">
+   <path 
+   style="" d="m 50,970.36218 c -17.6376,0 -32,14.3625 -32,32.00002 0,17.6374 14.3624,32 32,32 17.6376,0 32,-14.3626 32,-32 0,-17.63752 -14.3624,-32.00002 -32,-32.00002 z m 0,6 c 14.3949,0 26,11.60516 26,26.00002 0,14.3947 -11.6051,26 -26,26 -14.3949,0 -26,-11.6053 -26,-26 0,-14.39486 11.6051,-26.00002 26,-26.00002 z m 0,4 c -1.6568,0 -3,1.3432 -3,3 l 0,19.00002 c 0,0.8284 0.3321,1.5821 0.875,2.125 l 12.0313,12.0312 c 1.1714,1.1715 3.0785,1.1717 4.25,0 1.1716,-1.1715 1.1716,-3.0784 0,-4.25 L 53,1001.1122 53,983.36218 c 0,-1.6568 -1.3431,-3 -3,-3 z" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"/>
+   </g></svg>

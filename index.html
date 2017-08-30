@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IIT Program Global Medical Affairs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="home">
+<header>
+    <div class="iit-container">
+        <nav class="box y-center">
+            <div>
+                <img src="images/LOGO_IIT.png" alt="logo IIT"/>
+            </div>
+            <ul class="box y-center wrap right">
+                <!--Active current url-->
+                <li class="url active">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="url">
+                    <a href="lonsurf.html">Lonsurf</a>
+                </li>
+                <li class="url">
+                    <a href="pixuvri.html">Pixuvri</a>
+                </li>
+                <li class="url">
+                    <a href="#">Process/guidlines</a>
+                </li>
+                <li class="picto_url">
+                    <a href="Administration-User.html">
+                        <button type="button" class="btn-admin"></button>
+                    </a>
+                </li>
+                <li class="picto_url">
+                    <a href="">
+                        <button type="button" class="btn-mail"></button>
+                    </a>
+                </li>
+                <li>
+                    <div>
+                        <img class="user_profil" src="images/user_profil.jpg" alt="user profil"/>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="iit-container">
+        <div class="bg-blurwhite center box wrap">
+            <div class="calendar">
+                <div class="calendar_header box ">
+                    <time>
+                        <span class="day">
+                            01
+                        </span>
+                        <br>
+                        <span class="month">
+                            January
+                        </span>
+                    </time>
+                    <div>
+                        <div class="events">
+
+                        </div>
+                        <div id="add-event-button" class="add-event">
+                            <p>Add new event</p>
+                        </div>
+                    </div>
+                </div>
+                <datalist id="types">
+                    <option value="pixuvri">
+                        Pixuvry
+                    </option>
+                    <option value="lonsurf">
+                        Longsurf
+                    </option>
+                    <option value="process_guidlines">
+                        Process/Guidlines
+                    </option>
+                </datalist>
+                <div id="calendar">
+
+                    <div id="add-event" style="display: none" class="bg-light">
+                        <h2>Add new event</h2>
+                        <form action="#" method="get">
+                            <input type="text" placeholder="Title" id="title_event" name="title_event">
+                            <input type="text" placeholder="Type" list="types" name="type_event">
+                            <label for="start_event">Start (ex. 9:00)</label>
+                            <input type="time" id="start_event" placeholder="" name="start_event">
+                            <label for="end_event">End (ex. 18:00)</label>
+                            <input type="time" id="end_event" placeholder="Start (ex. 18:00)" name="end_event">
+                            <div class="box center submit">
+                                <div>
+                                    <button type="button" id="hide-event-button"
+                                            class="rounded bg-danger btn-close"></button>
+                                </div>
+                                <div>
+                                    <input type="submit" class="rounded bg-primary btn-more" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="right-calendar spread">
+                <div class="box wrap between frames">
+                    <div class="pixuvri shadow-box bg-light">
+                        <a href="pixuvri.html">
+
+                            <div class="content-item">
+
+                                <div class="overlay"></div>
+
+                                <div class="corner-overlay-content"></div>
+
+                                <div class="overlay-content">
+                                    <h2>See the studies</h2>
+                                    <p>some texts</p>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lonsurf shadow-box bg-light">
+                        <a href="#">
+                            <div class="content-item">
+
+                                <div class="overlay"></div>
+
+                                <div class="corner-overlay-content"></div>
+
+                                <div class="overlay-content">
+                                    <h2>See the studies</h2>
+                                    <p>some texts</p>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="process_guidlines shadow-box bg-light">
+                        <a href="#">
+                            <div class="content-item">
+
+                                <div class="overlay"></div>
+
+                                <div class="corner-overlay-content"></div>
+
+                                <div class="overlay-content">
+                                    <h2>See the studies</h2>
+                                    <p>some texts</p>
+                                </div>
+
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="bottom-frames">
+                    <h2>New IIT concepts</h2>
+                    <div class="articles box wrap center">
+                        <article>
+                            <div class="box">
+                                <div>
+                                    <div class="flag-thumbs">
+                                        <img src="images/flags/netherland.jpg">
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <p>
+                                        A single-arm phase II of TAS-102 and nal-IRI in combination with bevacizumab
+                                        after oxaliplatin-failure in patients with metastatic colorectal carcinoma
+                                        (TALIRICC)
+                                    </p>
+                                    <a class="btn bg-primary" href="#">Read more</a>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+                        <article>
+                            <div class="box">
+                                <div>
+                                    <div class="flag-thumbs">
+                                        <img src="images/flags/france.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>
+                                        PLCRC-tQUALITAS: Quality of life in metastatic colorectal cancer patients
+                                        treated with
+                                        TAS102 in late line in the PLCRC cohort
+                                    </p>
+                                    <a class="btn bg-primary" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+<footer>
+    <div class="iit-container">
+        <div class="box between">
+            <div class="disclaimer">
+                <h4>Disclaimer</h4>
+                <p>
+                    All documents that are downloaded on iit must be submitted for local regulatory approval before any
+                    use with external stakeholders
+                </p>
+            </div>
+            <div class="contact">
+                <h4>Contact</h4>
+                <p>
+                    Please feel free to contact us with any questions or <a href="http://remarks.contact@iit.com">remarks.contact@iit.com</a>
+                </p>
+            </div>
+            <div class="logos box">
+                <div>
+                    <img src="images/logo_iit_footer.png" alt="logo iit"/>
+                </div>
+                <div>
+                    <img src="images/2000px-Servier_logo.png" alt="logo Servier"/>
+                </div>
+            </div>
+            <div>
+                <p>Copyright © 2016
+                    <br> All Rights Reserved by Servier</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/moment-with-locales.min.js"></script>
+<script src="js/fullcalendar.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var selectedDate;
+        var events = [
+            {
+                title: 'A exemple Event',
+                start: '2017-06-02T15:30:00',
+                end: '2017-06-02T16:30:00',
+                className: 'pixuvri'
+            },
+            {
+                title: 'A exemple Event',
+                start: '2017-06-16T15:30:00',
+                end: '2017-06-18T16:30:00',
+                className: 'lonsurf'
+            },
+            {
+                title: 'A exemple Event',
+                start: '2017-06-18T15:30:00',
+                end: '2017-06-18T16:30:00',
+                className: 'process_guidlines'
+            },
+            {
+                title: 'A exemple Event',
+                start: '2017-06-18T15:30:00',
+                end: '2017-06-18T17:30:00',
+                className: 'pixuvri'
+            },
+            {
+                title: 'A exemple Event',
+                start: '2017-06-21T15:30:00',
+                end: '2017-06-21T16:30:00',
+                className: 'lonsurf'
+            },
+        ];
+
+        function getEventElement(event) {
+
+            var $event = $('<div class="event"></div>');
+            $event.addClass(event.className);
+            var $title = $('<h4 class="title"></h4>');
+            $title.text(event.title);
+            var $duration = $('<p></p>');
+            $duration.text(moment(event.start).format('HH:mm') + ' - ' + moment(event.end).format('HH:mm'));
+            $event.append($title);
+            $event.append($duration);
+            return $event;
+
+        }
+
+        function setDateHeader(date) {
+            selectedDate = date;
+            var $CH_day = $('.calendar_header .day');
+            var $CH_month = $('.calendar_header .month');
+            $CH_day.text(moment(date).format('D'));
+            $CH_month.text(moment(date).format('MMM'));
+            var $events_container = $('.calendar_header .events');
+            $events_container.empty();
+            for (var key in events) {
+                var compare = moment(date).format('YYYY-MM-DD') === moment(events[key].start).format('YYYY-MM-DD');
+                if (compare) {
+                    $events_container.append(getEventElement(events[key]));
+                }
+            }
+        }
+
+        setDateHeader(moment());
+
+        $('#calendar').fullCalendar({
+            locale: 'en',
+            dayNamesShort: ['S', 'M', 'T', 'W',
+                'T', 'F', 'S'],
+            header: {
+                left: 'prev',
+                center: 'next',
+                right: 'title'
+            },
+            displayEventTime: false,
+            height: 'auto',
+            firstDay: '0',
+            fixedWeekCount: false,
+            titleFormat: 'MMMM',
+            dayClick: function (date, jsEvent, view) {
+                setDateHeader(date._d);
+            },
+            eventRender: function (event, element) {
+                var day = moment(event.start._d).format('YYYY-MM-DD');
+                var $element_day = $('td.fc-day-top[data-date=' + day + ']');
+                $element_day.css('color', '#fff');
+                $element_day.addClass(event.className[0]);
+            },
+            editable: false,
+            events: events
+        });
+        $event_form = $('#add-event');
+        $('#add-event-button').on('click', function (e) {
+            $event_form.show();
+        });
+        $('#hide-event-button').on('click', function (e) {
+            $event_form.hide();
+        });
+    });
+
+
+</script>
+</body>
+</html>

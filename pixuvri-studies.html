@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IIT Program Global Medical Affairs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body class="pixuvri_study">
+
+<header>
+    <div class="iit-container">
+        <nav class="box y-center">
+            <div>
+                <img src="images/LOGO_IIT.png" alt="logo IIT"/>
+            </div>
+            <ul class="box y-center wrap right">
+                <!--Active current url-->
+                <li class="url">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="url">
+                    <a href="lonsurf.html">Lonsurf</a>
+                </li>
+                <li class="url active">
+                    <a href="pixuvri.html">Pixuvri</a>
+                </li>
+                <li class="url">
+                    <a href="process.html">Process/guidlines</a>
+                </li>
+                <li class="picto_url">
+                    <a href="Administration-User.html">
+                        <button type="button" class="btn-admin"></button>
+                    </a>
+                </li>
+                <li class="picto_url">
+                    <a href="">
+                        <button type="button" class="btn-mail"></button>
+                    </a>
+                </li>
+                <li>
+                    <div>
+                        <img class="user_profil" src="images/user_profil.jpg" alt="user profil"/>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="page-title">
+        <div class="iit-container">
+            <div>
+                <div class="logo">
+                    <button type="button" class="rounded bg-secondary shadow btn-close"></button>
+                </div>
+                <h1 class="light">Pixuvri studies</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="iit-container">
+    <section class="bg-blurwhite">
+        <form action="/">
+            <div>
+
+            <nav class="box center filter subnav">
+
+                <div>
+                    <input type="text" name="enter_keywords" id="enter_keywords" placeholder="Enter keywords">
+                </div>
+                <div>
+                    <input type="text" list="all_countries" name="country" id="country" placeholder="All countries">
+                </div>
+                <div>
+                    <input type="text" list="study_phases" name="study_phase" id="study_phase"
+                           placeholder="All study phases">
+                </div>
+                <div>
+                    <input type="text" list="concept_status" name="concept_state" id="concept_state"
+                           placeholder="All concept status">
+
+                </div>
+                <div>
+                    <select name="select_example">
+                        <option selected disabled>Select a country</option>
+                        <option value="France">France</option>
+                        <option value="England">England</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Portugal">Portugal</option>
+                    </select>
+                </div>
+                <div class="">
+                    <button type="button" class="rounded bg-primary btn-search"></button>
+                </div>
+            </nav>
+            </div>
+        </form>
+        <datalist id="all_countries">
+            <option value="France">France</option>
+            <option value="England">England</option>
+            <option value="Spain">Spain</option>
+            <option value="Portugal">Portugal</option>
+        </datalist>
+        <datalist id="study_phases">
+            <option value="study_phases1">Study phases 1</option>
+            <option value="study_phases2">Study phases 2</option>
+            <option value="study_phases3">Study phases 3</option>
+            <option value="study_phases4">Study phases 4</option>
+        </datalist>
+        <datalist id="concept_status">
+            <option value="concept_status1">Concept status 1</option>
+            <option value="concept_status2">Concept status 2</option>
+            <option value="concept_status3">Concept status 3</option>
+            <option value="concept_status4">Concept status 4</option>
+        </datalist>
+        <table class="bg-light table table-responsive table-striped">
+            <thead class="sort">
+            <tr>
+                <td>
+                    <div class="float-left">
+                        <span class="svg-sort"></span>
+                        <button type="button" class="name_sort">Status</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="float-left">
+                        <span class="svg-sort"></span>
+                        <button type="button" class="visa_sort">Title</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="float-left">
+                        <span class="svg-sort"></span>
+                        <button type="button" class="role_sort">Country</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="float-left">
+                        <span class="svg-sort"></span>
+                        <button type="button" class="visa_sort">Phase</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="float-left">
+                        <span class="svg-sort"></span>
+                        <button type="button" class="role_sort">Last Update</button>
+                    </div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </thead>
+            <tbody class="list">
+
+            <tr>
+                <td>
+                    <div class="status approved">
+
+                    </div>
+                </td>
+                <td>
+                    <p>
+                        PLCR-QUALITAS: Quality of life inmetastatic colorectal cancer patients treated with TAS102 in
+                        late line in the PLCR cohort
+                    </p>
+                </td>
+                <td class="center">
+                    <img src="images/Flag_of_the_Netherlands.svg.png" alt="flag1"/></td>
+                <td class="center">
+                    <p>I / II</p>
+                </td>
+                <td class="center">
+                    <p>03/28/2017</p>
+                </td>
+                <td>
+                    <div>
+                        <button type="button" class="rounded bg-secondary btn-remove"></button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button type="button" class="rounded bg-secondary btn-modify"></button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button type="button" class="rounded bg-secondary btn-pdf"></button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="status pending">
+
+                    </div>
+                </td>
+                <td>
+                    <p>PLCR-QUALITAS: Quality of life inmetastatic colorectal cancer patients treated with TAS102 in
+                        late line in the PLCR cohort</p>
+                </td>
+                <td class="center">
+                    <img src="images/1280px-Flag_of_the_United_Kingdom.svg.png" alt="flag2"/>
+                </td>
+                <td class="center">
+                    <p>I / II</p>
+                </td>
+                <td class="center">
+                    <p>03/28/2017</p>
+                </td>
+                <td>
+                    <div>
+                        <button type="button" class="rounded bg-secondary btn-remove"></button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button type="button" class="rounded bg-secondary btn-modify"></button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button type="button" class="rounded bg-secondary btn-pdf"></button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="status declined">
+
+                    </div>
+                </td>
+                <td>
+                    <p>PLCR-QUALITAS: Quality of life inmetastatic colorectal cancer patients treated with TAS102 in
+                        late line in the PLCR cohort</p>
+                </td>
+                <td class="center">
+                    <img src="images/1280px-Flag_of_the_United_Kingdom.svg.png" alt="flag2"/>
+                </td>
+                <td class="center">
+                    <p>I / II</p>
+                </td>
+                <td class="center">
+                    <p>03/28/2017</p>
+                </td>
+                <td>
+                    <div>
+                        <button type="button" class="rounded bg-secondary btn-remove"></button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button type="button" class="rounded bg-secondary btn-modify"></button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button type="button" class="rounded bg-secondary btn-pdf"></button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="status submitted">
+
+                    </div>
+                </td>
+                <td>
+                    <p>PLCR-QUALITAS: Quality of life inmetastatic colorectal cancer patients treated with TAS102 in
+                        late line in the PLCR cohort</p>
+                </td>
+                <td class="center">
+                    <img src="images/1280px-Flag_of_the_United_Kingdom.svg.png" alt="flag2"/>
+                </td>
+                <td class="center">
+                    <p>I / II</p>
+                </td>
+                <td class="center">
+                    <p>03/28/2017</p>
+                </td>
+                <td>
+                    <div>
+                        <button type="button" class="rounded bg-secondary btn-remove"></button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button type="button" class="rounded bg-secondary btn-modify"></button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <button type="button" class="rounded bg-secondary btn-pdf"></button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+<footer>
+    <div class="iit-container">
+        <div class="box between">
+            <div class="disclaimer">
+                <h4>Disclaimer</h4>
+                <p>
+                    All documents that are downloaded on iit must be submitted for local regulatory approval before any
+                    use with external stakeholders
+                </p>
+            </div>
+            <div class="contact">
+                <h4>Contact</h4>
+                <p>
+                    Please feel free to contact us with any questions or <a href="http://remarks.contact@iit.com">remarks.contact@iit.com</a>
+                </p>
+            </div>
+            <div class="logos box">
+                <div>
+                    <img src="images/logo_iit_footer.png" alt="logo iit"/>
+                </div>
+                <div>
+                    <img src="images/2000px-Servier_logo.png" alt="logo Servier"/>
+                </div>
+            </div>
+            <div>
+                <p>Copyright © 2016
+                    <br> All Rights Reserved by Servier</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

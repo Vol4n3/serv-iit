@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IIT Program Global Medical Affairs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body class="pixuvri_study">
+<header>
+    <div class="iit-container">
+        <nav class="box y-center">
+            <div>
+                <img src="images/LOGO_IIT.png" alt="logo IIT"/>
+            </div>
+            <ul class="box y-center wrap right">
+                <!--Active current url-->
+                <li class="url">
+                    <a href="/">Home</a>
+                </li>
+                <li class="url">
+                    <a href="lonsurf.html">Lonsurf</a>
+                </li>
+                <li class="url active">
+                    <a href="pixuvri.html">Pixuvri</a>
+                </li>
+                <li class="url">
+                    <a href="#">Process/guidlines</a>
+                </li>
+                <li class="picto_url">
+                    <a href="Administration-User.html">
+                        <button type="button" class="btn-admin"></button>
+                    </a>
+                </li>
+                <li class="picto_url">
+                    <a href="">
+                        <button type="button" class="btn-mail"></button>
+                    </a>
+                </li>
+                <li>
+                    <div>
+                        <img class="user_profil" src="images/user_profil.jpg" alt="user profil"/>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="page-title">
+        <div class="iit-container">
+            <div>
+                <div class="logo box ">
+                    <button type="button" class="rounded bg-secondary hover-add-new shadow btn-more"></button>
+                                        <button type="button" class="rounded bg-secondary hover-add-new shadow btn-more"></button>
+
+                </div>
+                <h1 class="light">Add new pixuvri study</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="iit-container">
+    <section class="bg-blurwhite">
+        <nav class="subnav box center steps">
+            <div>
+                <button type="button" class="rounded btn-left active"></button>
+            </div>
+            <div>
+                <button type="button" class="rounded"></button>
+                <p>Basic information
+                    <br>Drugs</p>
+            </div>
+            <div>
+                <button type="button" class="rounded active"></button>
+                <p>Synopsis/Protocol
+                    <br>Concept
+                </p>
+            </div>
+            <div>
+                <button type="button" class="rounded"></button>
+                <p>Finalization
+                    <br>Updates
+                </p>
+            </div>
+            <div>
+                <button type="button" class="rounded btn-right active"></button>
+            </div>
+
+        </nav>
+
+        <datalist id="drugs_supply">
+            <option value="drug_supply1">Drug supply 1</option>
+            <option value="drug_supply2">Drug supply 2</option>
+            <option value="drug_supply3">Drug supply 3</option>
+            <option value="drug_supply4">Drug supply 4</option>
+        </datalist>
+        <datalist id="fundings">
+            <option value="funding1">Study funding 1</option>
+            <option value="funding2">Study funding 2</option>
+            <option value="funding3">Study funding 3</option>
+            <option value="funding4">Study funding 4</option>
+        </datalist>
+        <datalist id="fundings_type">
+            <option value="funding_type1">Funding type 1</option>
+            <option value="funding_type2">Funding type 2</option>
+            <option value="funding_type3">Funding type 3</option>
+            <option value="funding_type4">Funding type 4</option>
+        </datalist>
+        <datalist id="reviews_status">
+            <option value="review_status1">Review status 1</option>
+            <option value="review_status2">Review status 2</option>
+            <option value="review_status3">Review status 3</option>
+            <option value="review_status4">Review status 4</option>
+        </datalist>
+        <datalist id="contracts_status">
+            <option value="contract_status1">Contract status 1</option>
+            <option value="contract_status2">Contract status 2</option>
+            <option value="contract_status3">Contract status 3</option>
+            <option value="contract_status4">Contract status 4</option>
+        </datalist>
+        <datalist id="studies_status">
+            <option value="study_status1">Study status 1</option>
+            <option value="study_status2">Study status 2</option>
+            <option value="study_status3">Study status 3</option>
+            <option value="study_status4">Study status 4</option>
+        </datalist>
+        <datalist id="currencies">
+            <option value="currency1">Currency 1</option>
+            <option value="currency2">Currency 2</option>
+            <option value="currency3">Currency 3</option>
+            <option value="currency4">Currency 4</option>
+        </datalist>
+
+        <form id="form" action="/action_page.php" method="post">
+            <div class="box center wrap">
+                <section class="block_left">
+                    <div class="bg-light">
+                        <fieldset>
+                            <legend>Synopsis/protocol</legend>
+                            <div class="request">
+                                <label class="box down">
+                                    <label class="required">Unsolicited request / Email</label>
+                                    <input type="checkbox" id="request" name="choix1" required>
+                                    <label for="request"></label>
+                                </label>
+                            </div>
+                            <label class="required">Synopsis</label>
+                            <input type="file" name="pdf" required>
+
+                            <label>Protocol</label>
+                            <input type="file" name="pdf">
+
+                            <label class="required">Budget</label>
+                            <div class="tabulation">
+                                <div>
+                                    <label for="comment">Comment</label>
+                                    <input type="text" name="comment" id="comment"
+                                           placeholder="Additional budgetary information">
+                                </div>
+                                <div>
+
+                                    <label for="drug_supply" class="required">Drug supply </label>
+                                    <input type="text" list="drugs_supply" id="drug_supply" name="drug_supply"
+                                           placeholder="Drug supply needed" required>
+                                </div>
+                                <div>
+
+                                    <label for="funding" class="required">Funding</label>
+                                    <input type="text" list="fundings" id="funding" name="funding"
+                                           placeholder="Study funding" required>
+                                </div>
+                                <div>
+
+                                    <label for="funding_type" class="required">Funding type</label>
+                                    <input type="text" list="fundings_type" id="funding_type" name="funding_type"
+                                           placeholder="If there is a funding for the study"
+                                           required>
+                                </div>
+                                <label for="budget">Budget</label>
+
+                                <div class="box">
+                                    <input type="text" style="width:70%;" name="budget" id="budget"
+                                           placeholder="Amount">
+                                    <input type="text" style="width:30%;" name="currency" id="currency"
+                                           placeholder="Currency">
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </div>
+                </section>
+
+                <section class="block_right">
+                    <div class="bg-light">
+                        <fieldset>
+                            <legend>Concept</legend>
+                            <br>
+                            <label>Concept review *</label>
+                            <div class="tabulation">
+                                <div>
+                                    <label for="review_status" class="required"> Concept review status </label>
+                                    <input type="text" list="review_status" name="review_status" id="review_status"
+                                           placeholder="Current review status" required>
+                                </div>
+
+                                <label>Concept status change date *</label>
+                                <input type="date" name="concept_status_change_date">
+                            </div>
+                            <br>
+
+                            <label>Contract status *</label>
+                            <div class="tabulation">
+                                <div>
+                                    <label for="contract_status" class="required"> Contract status </label>
+                                    <input type="text" list="contract_status" name="contract_status"
+                                           id="contract_status" placeholder="Current contract status"
+                                           required>
+                                </div>
+
+                                <label>Contract status change date *</label>
+                                <input type="date" name="contract_status_change_date">
+                            </div>
+                            <br>
+                            <label>Study status *</label>
+                            <div class="tabulation">
+                                <div>
+                                    <label for="study_status" class="required"> Study status </label>
+                                    <input type="text" list="study_status" name="study_status" id="study_status"
+                                           placeholder="Current study status" required>
+                                </div>
+
+                                <label>Concept status change date *</label>
+                                <input type="date" name="study_status_change_date">
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="submit box right ">
+                        <input class="bg-secondary" type="submit" value="Save">
+                        <input class="bg-primary" type="submit" value="Next">
+                    </div>
+                </section>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="iit-container">
+        <div class="box between">
+            <div class="disclaimer">
+                <h4>Disclaimer</h4>
+                <p>
+                    All documents that are downloaded on iit must be submitted for local regulatory approval before any
+                    use with external stakeholders
+                </p>
+            </div>
+            <div class="contact">
+                <h4>Contact</h4>
+                <p>
+                    Please feel free to contact us with any questions or <a href="http://remarks.contact@iit.com">remarks.contact@iit.com</a>
+                </p>
+            </div>
+            <div class="logos box">
+                <div>
+                    <img src="images/logo_iit_footer.png" alt="logo iit"/>
+                </div>
+                <div>
+                    <img src="images/2000px-Servier_logo.png" alt="logo Servier"/>
+                </div>
+            </div>
+            <div>
+                <p>Copyright © 2016
+                    <br> All Rights Reserved by Servier</p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+</body>
+
+</html>
